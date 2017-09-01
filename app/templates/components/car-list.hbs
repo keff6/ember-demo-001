@@ -1,0 +1,9 @@
+{{input value=carName}}
+<button {{action "addCar"}}>Add Car</button>
+<ul>
+    {{#each cars as |car|}}
+    <li>{{car}}</li>
+    {{/each}}
+</ul>
+
+<button {{action "saveCars"}}>Save Cars</button>
